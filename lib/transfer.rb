@@ -11,7 +11,7 @@ end
 
 def valid?
 
-  puts @sender
+  puts "HERY #{@sender}"
   puts BankAccount.find_by_name(@sender)
 
 
