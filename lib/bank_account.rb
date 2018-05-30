@@ -1,4 +1,5 @@
 class BankAccount
+  @@all = []
 
   attr_accessor :balance, :status
   attr_reader :name
@@ -7,6 +8,7 @@ class BankAccount
     @name = name
     @balance = 1000
     @status = "open"
+    @@all << self
   end
 
   def deposit(amount)
