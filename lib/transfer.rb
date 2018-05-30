@@ -7,6 +7,11 @@ def initialize (sender, receiver, amount)
 @sender = sender
 @receiver = receiver
 @amount = amount
+end
+
+def valid?
+
+  if BankAccount.find_by_name(@sender).valid? && BankAccount.find_by_name(@receiver).valid?
 
 end
 
