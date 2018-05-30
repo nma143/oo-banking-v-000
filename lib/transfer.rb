@@ -15,7 +15,12 @@ def valid?
   else
     return false
   end
+end
 
+def execute_transaction
+  @sender.deposit(-1*@amount)
+  @receiver.deposit(@amount)
+  @status = "complete"
 end
 
 
