@@ -9,4 +9,8 @@ def initialize(name)
   @status = "open"
 end
 
+def deposit(amount)
+  @balance = @balance + amount
+end
+
 end
