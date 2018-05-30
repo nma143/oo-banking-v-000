@@ -33,6 +33,7 @@ class BankAccount
     @status = "closed"
   end
 
-
-
+  def self.find_by_name(name)
+    @@all.detect{|account| account.name == name}
+  end
 end
