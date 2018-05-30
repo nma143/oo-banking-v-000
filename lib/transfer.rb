@@ -12,6 +12,10 @@ end
 def valid?
 
   if BankAccount.find_by_name(@sender).valid? && BankAccount.find_by_name(@receiver).valid?
+    return true
+  else
+    return false
+  end
 
 end
 
