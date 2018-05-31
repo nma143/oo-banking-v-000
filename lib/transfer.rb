@@ -23,8 +23,8 @@ def execute_transaction
     @receiver.deposit(@amount)
     @status = "complete"
   else
-    "Transaction rejected. Please check your account balance."
     @status = "rejected"
+    return "Transaction rejected. Please check your account balance."
   end
 end
 
