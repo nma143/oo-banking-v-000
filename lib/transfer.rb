@@ -32,7 +32,7 @@ def reverse_transfer
   if @status == "complete"
     @receiver.deposit(-1*@amount)
     @sender.deposit(@amount)
-    @status == "reversed"
+    @status = "reversed"
   end
 
 end
